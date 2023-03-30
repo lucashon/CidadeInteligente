@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PEOPLE FLOW</title>
+</head>
+<body>
+    <!-- LAIS -->
+<header id="cabecalho">
+    <img id="icone" src="./assets/iconeprojeto.png" >
+    <h1 id="logo">PEOPLE FLOW</h1>
+     <button id="botao"><a href=""></a> SOLUÇÃO</button>
+
+</header>
+    <main>
+        <!-- LAURA -->
+        <section class="conteudoProblema">
+         <div>   <h2 class="titulo">
+                LIMITAÇÃO DO <br>
+                FLUXO DE PESSOAS
+            </h2>
+            
+            <p class="text">
+                super lotação em centro comerciais,
+                construções,condições climáticas <br>
+                etc...Imprevistos que acontecem quando 
+                planejamos sair para locais <br>
+                movimentados,mas e se não fossem mais Imprevistos?
+            </p>
+            </div>
+
+           <div class="text-infor"><p >
+                Já pensou em saber como está a <br>
+                movimentação do local aonde você pretende ir?<br>
+                Saiba mais sobre o nosso aplicativa que irá te <br>
+                ajudar nisso.
+            </p>
+           </div>
+
+
+        </section>
+
+        <!-- LAURA -->
+        <div><img src="./assets/foto22.webp" alt=""></div>
+
+             <!-- PEDRO -->
+      <section class="container">
+
+        <section class="conteudoSolucao">
+            <h1 class="tituloSolucao">O People Flow soluciona esse problema, como?</h1>
+          <p class="textoSolucao">
+             Ao se cadastrar no app o usuário tem acesso à atividade das pessoas em pontos  específicos <br> da cidade, geralmente os lugares mais movimentados como o bairro do Jacintinho ou Mercado. <br>  Sendo assim fica da escolha do usuário  ir ou não a esses lugares. Quanto mais pessoas <br> logadas no app mais precisa será a quantidade  de pessoas no local, uma vez que o app usará <br> a localização dos usuários para fazer o controle dos dados.</p>
+        </section>
+
+        <section class="box">
+          <!-- LUCAS -->
+          <article class="box4 ">
+
+            <h2>People Flow </h2>
+
+           <p><button id="btn" >Centro de Maceió</button></p>
+           <p id="outBtn"></p>
+
+           <p><button id="btn2" >Jacintinho</button></p>
+           <p id="outBtn2"></p>
+           
+           <p><button id="btn3" >Praia da Ponta Verde</button></p>
+           <p id="outBtn3"></p>
+           
+          </article>
+        </section>
+
+        
+    </main>
+
+    <footer id="rodape"> <p>2023</p> <p>&copy;TODOS OS DIREITOS RESERVADOS</p> <p>DESENVOLVIDO POR: LUCAS, <br> LAURA, LAÍS E PEDRO</p>
+
+    <script>
+
+        const outBtn = document.getElementById('outBtn')
+        const outBtn2 = document.getElementById('outBtn2')
+        const outBtn3 = document.getElementById('outBtn3')
+        let cadastros = ['a','b','c','d','e','f','g'] // 7
+        
+        let btn = document.getElementById('btn')
+         btn.addEventListener('click', ()=>{
+            
+          let centro = cadastros.length * 81
+          outBtn.textContent = `A quantidade de pessoas no centro é de aproximadamente: ${centro}`
+          outBtn.style.color = '#0000ff'
+          outBtn.style.backgroundColor = '#fff'
+  
+         // console.log(`a quantidade de pessoas no centro é de ${centro}`)
+          
+  
+         });
+         
+         let btn2 = document.getElementById('btn2')
+         btn2.addEventListener('click', ()=>{
+  
+          let jacintinho = cadastros.length * 75
+          outBtn2.textContent = `A quantidade de pessoas no Jacintinho é de aproximadamente: ${jacintinho}`
+          outBtn2.style.color = '#0000ff'
+          outBtn2.style.backgroundColor = '#fff'
+
+  
+         // console.log(`a quantidade de pessoas na praia  é de ${quantidade}`)
+  
+         });
+  
+         let btn3 = document.getElementById('btn3')
+         btn3.addEventListener('click', ()=>{
+  
+          let praia = cadastros.length * 69
+  
+          outBtn3.textContent = `A quantidade de pessoas na praia da Ponta Praia da Ponta Verde é de aproximadamente:  ${praia}`
+          outBtn3.style.color = '#0000ff'
+          outBtn3.style.backgroundColor = '#fff'
+         //   console.log(`a quantidade de pessoas no Jacintinho é de ${jacintinho}`)
+  
+         })
+          
+      </script>
+
+
+</body>
+</html>
